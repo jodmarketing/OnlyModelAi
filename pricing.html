@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing | OnlyModelAI</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    header {
+      background-color: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header nav a {
+      color: gold;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      color: gold;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .pricing-card {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 16px;
+      padding: 30px;
+      text-align: center;
+      transition: 0.3s ease;
+      position: relative;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+    }
+
+    .pricing-card h3 {
+      color: gold;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 10px 0 20px;
+    }
+
+    .pricing-card ul {
+      list-style: none;
+      padding: 0;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card ul li {
+      margin: 10px 0;
+    }
+
+    .btn {
+      background-color: gold;
+      color: black;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ffd700;
+    }
+
+    .best-seller::before {
+      content: "★ Best Seller";
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: gold;
+      color: black;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    .monthly-plan {
+      max-width: 500px;
+      margin: 60px auto 100px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Choose Your Plan</h1>
+    <p>Unlock powerful AI tools and training to build your own money-making AI influencer empire.</p>
+  </div>
+
+  <div class="pricing-grid">
+    <!-- Starter -->
+    <div class="pricing-card">
+      <h3>Starter</h3>
+      <div class="price">$49</div>
+      <ul>
+        <li>Basic AI girl setup</li>
+        <li>Beginner-friendly tools</li>
+        <li>Quick-start guide</li>
+      </ul>
+      <a href="https://aigirlmethod.gumroad.com/l/zlyiw?layout=profile" class="btn">Get Starter</a>
+    </div>
+
+    <!-- Deluxe -->
+    <div class="pricing-card best-seller">
+      <h3>Deluxe</h3>
+      <div class="price">$150</div>
+      <ul>
+        <li>Everything in Starter</li>
+        <li>Advanced monetization</li>
+        <li>Templates + automation</li>
+      </ul>
+      <a href="https://aigirlmethod.gumroad.com/l/ckzui?layout=profile" class="btn">Get Deluxe</a>
+    </div>
+
+    <!-- Mentorship -->
+    <div class="pricing-card">
+      <h3>Mentorship</h3>
+      <div class="price">$380</div>
+      <ul>
+        <li>1-on-1 guidance</li>
+        <li>Full system buildout</li>
+        <li>Private chat access</li>
+      </ul>
+      <a href="https://aigirlmethod.gumroad.com/l/Mentor?layout=profile" class="btn">Join Mentorship</a>
+    </div>
+  </div>
+
+  <!-- Monthly Plan -->
+  <div class="pricing-card monthly-plan">
+    <h3>Monthly Plan</h3>
+    <div class="price">$20/mo</div>
+    <ul>
+      <li>Monthly AI updates</li>
+      <li>New growth strategies</li>
+      <li>Ongoing support</li>
+    </ul>
+    <a href="https://aigirlmethod.gumroad.com/l/mwzwc?layout=profile" class="btn">Subscribe Monthly</a>
+  </div>
+
+</body>
+</html>
