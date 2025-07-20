@@ -1,0 +1,60 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: white;
+}
+
+header {
+  background-color: #111;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.pricing-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.box {
+  background: #1a1a1a;
+  padding: 20px;
+  border: 2px solid gold;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.best-seller {
+  border: 3px solid gold;
+  box-shadow: 0 0 20px gold;
+}
+
+.monthly {
+  margin-top: 20px;
+  border: 1px dashed #888;
+  background-color: #111;
+}
