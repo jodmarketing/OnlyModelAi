@@ -1,78 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OnlyModelAI</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monetize Your AI Model</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .section.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .content {
+            max-width: 800px;
+        }
+        h1 {
+            color: #ffd700;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ffd700;
+            color: #1a1a1a;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #f1c40f;
+        }
+        .pricing-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .pricing-box {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        .highlight {
+            background: #f1c40f;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .image-placeholder {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .faq-item {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        .question {
+            font-weight: bold;
+            color: #f1c40f;
+        }
+        .answer {
+            margin-top: 5px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="hero">
-    <h1>OnlyModelAI</h1>
-    <p>Create ultra-realistic AI models and monetize them.</p>
-  </section>
-
-  <section id="about">
-    <h2>About</h2>
-    <p>OnlyModelAI teaches you to generate and automate AI models to create income.</p>
-  </section>
-
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <div class="pricing-boxes">
-      <div class="box">
-        <h3>Starter</h3>
-        <p>$49 One-time</p>
-        <a href="https://aigirlmethod.gumroad.com/l/zlyiw?layout=profile" target="_blank">Buy Now</a>
-      </div>
-      <div class="box best-seller">
-        <h3>Deluxe (Best Seller)</h3>
-        <p>$150 One-time</p>
-        <a href="https://aigirlmethod.gumroad.com/l/ckzui?layout=profile" target="_blank">Buy Now</a>
-      </div>
-      <div class="box">
-        <h3>Mentorship</h3>
-        <p>$380 One-time</p>
-        <a href="https://aigirlmethod.gumroad.com/l/Mentor?layout=profile" target="_blank">Buy Now</a>
-      </div>
+    <div class="section" id="hero">
+        <div class="content">
+            <h1>Monetize Your AI Model</h1>
+            <p>Turn Digital Creativity Into Real Income</p>
+            <p>Unlock your AI potential with our proven strategies. Start earning today!</p>
+            <a href="https://aigirlmethod.gumroad.com/l/zlyiw?layout=profile" class="btn">Get Started Now</a>
+        </div>
     </div>
-    <div class="box monthly">
-      <h3>Monthly Access</h3>
-      <p>$20 / month</p>
-      <a href="https://aigirlmethod.gumroad.com/l/mwzwc?layout=profile" target="_blank">Subscribe</a>
-    </div>
-  </section>
 
-  <section id="faq">
-    <h2>FAQ</h2>
-    <div class="faq-item">
-      <h4>How does it work?</h4>
-      <p>We show you how to create AI models, automate content, and monetize fast.</p>
+    <div class="section" id="who-for">
+        <div class="content">
+            <h1>Who’s For?</h1>
+            <p><strong>Creators:</strong> Monetize your digital assets with ease.</p>
+            <p><strong>Entrepreneurs:</strong> Scale your AI projects for profit.</p>
+            <p><strong>Hobbyists:</strong> Turn passion into income effortlessly.</p>
+            <p>Ready to dive in? This is your chance!</p>
+        </div>
     </div>
-    <div class="faq-item">
-      <h4>Do I need experience?</h4>
-      <p>No experience needed. Everything is step-by-step.</p>
+
+    <div class="section" id="pricing">
+        <div class="content">
+            <h1>Pricing Options</h1>
+            <div class="pricing-container">
+                <div class="pricing-box">
+                    <h2>Starter</h2>
+                    <p>Basic tools and profile setup</p>
+                    <p>Perfect for beginners</p>
+                    <a href="https://aigirlmethod.gumroad.com/l/zlyiw?layout=profile" class="btn">Get Started</a>
+                </div>
+                <div class="pricing-box">
+                    <h2>Deluxe</h2>
+                    <p>Premium tools, marketing, 24/7 support</p>
+                    <p>Best value for growth</p>
+                    <a href="https://aigirlmethod.gumroad.com/l/ckzui?layout=profile" class="btn">Get Deluxe</a>
+                </div>
+                <div class="pricing-box">
+                    <h2>Mentorship</h2>
+                    <p>Personalized coaching, audits, resources</p>
+                    <p>Expert guidance included</p>
+                    <a href="https://aigirlmethod.gumroad.com/l/Mentor?layout=profile" class="btn">Join Now</a>
+                </div>
+                <div class="pricing-box" style="margin-top: 20px;">
+                    <h2>Monthly</h2>
+                    <p>Flexible access to all features</p>
+                    <p>Ideal for ongoing support</p>
+                    <a href="https://aigirlmethod.gumroad.com/l/mwzwc?layout=profile" class="btn">Subscribe Now</a>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>DM us on <a href="https://www.instagram.com/onlymodelai" target="_blank">@onlymodelai</a></p>
-    <p>Email: <a href="mailto:moecompany528@gmail.com">moecompany528@gmail.com</a></p>
-  </section>
+    <div class="section" id="deluxe">
+        <div class="content">
+            <h1>The Deluxe Package: Best Value</h1>
+            <p>Everything in Starter Plus:</p>
+            <ul>
+                <li>Premium tools for maximum profit</li>
+                <li>Advanced marketing strategies</li>
+                <li>24/7 expert support</li>
+            </ul>
+            <a href="https://aigirlmethod.gumroad.com/l/ckzui?layout=profile" class="btn">Get Deluxe Now</a>
+            <div class="image-placeholder">*Image Placeholder*</div>
+        </div>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="section" id="mentorship">
+        <div class="content">
+            <h1>Premium Mentorship Experience</h1>
+            <p>Personalized coaching with industry experts.</p>
+            <ul>
+                <li>Weekly strategy sessions</li>
+                <li>Custom profile audits</li>
+                <li>Exclusive growth resources</li>
+            </ul>
+            <a href="https://aigirlmethod.gumroad.com/l/Mentor?layout=profile" class="btn">Join Mentorship</a>
+            <div class="image-placeholder">*Image Placeholder*</div>
+        </div>
+    </div>
+
+    <div class="section" id="features">
+        <div class="content">
+            <h1>Features Comparison</h1>
+            <div class="highlight">
+                <p><strong>Starter:</strong> Basic tools, profile setup</p>
+                <p><strong>Deluxe:</strong> Advanced tools, marketing, support</p>
+                <p><strong>Mentorship:</strong> Personalized coaching, audits, resources</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="is-for-you">
+        <div class="content">
+            <h1>Is This For You?</h1>
+            <p><strong>Undecided?</strong> Start small and scale up.</p>
+            <p><strong>Engagement Woes?</strong> Boost your audience with our strategies.</p>
+            <p><strong>Ready for Growth?</strong> Unlock your full potential now!</p>
+        </div>
+    </div>
+
+    <div class="section" id="get-started">
+        <div class="content">
+            <h1>Get Started Now</h1>
+            <p>Transform your AI journey with our proven methods.</p>
+            <a href="https://aigirlmethod.gumroad.com/l/zlyiw?layout=profile" class="btn">Choose Package</a>
+            <div class="image-placeholder">*Image Placeholder*</div>
+        </div>
+    </div>
+
+    <div class="section" id="faq">
+        <div class="content">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-item">
+                <p class="question">How do I get started?</p>
+                <p class="answer">Sign up via any of our pricing plans and follow the setup guide.</p>
+            </div>
+            <div class="faq-item">
+                <p class="question">What’s included in the Deluxe package?</p>
+                <p class="answer">Premium tools, advanced marketing, and 24/7 support.</p>
+            </div>
+            <div class="faq-item">
+                <p class="question">Can I cancel my subscription?</p>
+                <p class="answer">Yes, cancellation is available through your account settings.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top >= 0 && rect.top < window.innerHeight) {
+                    section.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
