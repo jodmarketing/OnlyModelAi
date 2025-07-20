@@ -76,17 +76,44 @@
             height: auto;
             margin-top: 20px;
         }
-        .faq-item {
+        .faq-item, .testimonial-item {
             max-width: 800px;
             margin: 20px auto;
             text-align: left;
         }
-        .question {
+        .question, .testimonial-quote {
             font-weight: bold;
             color: #f1c40f;
         }
-        .answer {
+        .answer, .testimonial-author {
             margin-top: 5px;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form .btn {
+            width: 100%;
+        }
+        .footer {
+            background: #2d2d2d;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer a {
+            color: #ffd700;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: #f1c40f;
         }
     </style>
 </head>
@@ -106,6 +133,7 @@
             <p><strong>Creators:</strong> Monetize your digital assets with ease.</p>
             <p><strong>Entrepreneurs:</strong> Scale your AI projects for profit.</p>
             <p><strong>Hobbyists:</strong> Turn passion into income effortlessly.</p>
+            <p><strong>Students:</strong> Learn and earn with expert guidance.</p>
             <p>Ready to dive in? This is your chance!</p>
         </div>
     </div>
@@ -150,6 +178,7 @@
                 <li>Premium tools for maximum profit</li>
                 <li>Advanced marketing strategies</li>
                 <li>24/7 expert support</li>
+                <li>Exclusive community access</li>
             </ul>
             <a href="https://aigirlmethod.gumroad.com/l/ckzui?layout=profile" class="btn">Get Deluxe Now</a>
             <div class="image-placeholder">*Image Placeholder*</div>
@@ -164,9 +193,24 @@
                 <li>Weekly strategy sessions</li>
                 <li>Custom profile audits</li>
                 <li>Exclusive growth resources</li>
+                <li>One-on-one consultations</li>
             </ul>
             <a href="https://aigirlmethod.gumroad.com/l/Mentor?layout=profile" class="btn">Join Mentorship</a>
             <div class="image-placeholder">*Image Placeholder*</div>
+        </div>
+    </div>
+
+    <div class="section" id="testimonials">
+        <div class="content">
+            <h1>What Our Users Say</h1>
+            <div class="testimonial-item">
+                <p class="testimonial-quote">"This changed my AI game completely!"</p>
+                <p class="testimonial-author">- Jane D., Creator</p>
+            </div>
+            <div class="testimonial-item">
+                <p class="testimonial-quote">"The mentorship is worth every penny."</p>
+                <p class="testimonial-author">- Mark T., Entrepreneur</p>
+            </div>
         </div>
     </div>
 
@@ -187,6 +231,7 @@
             <p><strong>Undecided?</strong> Start small and scale up.</p>
             <p><strong>Engagement Woes?</strong> Boost your audience with our strategies.</p>
             <p><strong>Ready for Growth?</strong> Unlock your full potential now!</p>
+            <p><strong>New to AI?</strong> We’ve got you covered with tutorials.</p>
         </div>
     </div>
 
@@ -196,6 +241,18 @@
             <p>Transform your AI journey with our proven methods.</p>
             <a href="https://aigirlmethod.gumroad.com/l/zlyiw?layout=profile" class="btn">Choose Package</a>
             <div class="image-placeholder">*Image Placeholder*</div>
+        </div>
+    </div>
+
+    <div class="section" id="contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
     </div>
 
@@ -214,7 +271,18 @@
                 <p class="question">Can I cancel my subscription?</p>
                 <p class="answer">Yes, cancellation is available through your account settings.</p>
             </div>
+            <div class="faq-item">
+                <p class="question">Is there a money-back guarantee?</p>
+                <p class="answer">Yes, we offer a 30-day money-back guarantee.</p>
+            </div>
         </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 AI Monetization. All rights reserved.</p>
+        <a href="/privacy">Privacy Policy</a>
+        <a href="https://twitter.com">Twitter</a>
+        <a href="https://instagram.com">Instagram</a>
     </div>
 
     <script>
@@ -226,6 +294,12 @@
                     section.classList.add('active');
                 }
             });
+        });
+
+        // Simple form submission alert
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We’ll get back to you soon.');
         });
     </script>
 </body>
