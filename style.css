@@ -1,0 +1,58 @@
+
+body {
+  background-color: #15110E;
+  color: #E5E5E5;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  padding: 20px;
+  background-color: #1A1412;
+}
+nav a {
+  color: #F3C969;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn {
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.btn.gold {
+  background-color: #F3C969;
+  color: #15110E;
+}
+.btn.outline {
+  border: 2px solid #F3C969;
+  color: #F3C969;
+}
+footer {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #1A1412;
+}
+section {
+  padding: 60px 20px;
+}
+.cards, .pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  flex: 1 1 calc(33% - 40px);
+  background: #1F1B19;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
