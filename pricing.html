@@ -1,70 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing - OnlyModelAi</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlyModelAI - Pricing</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">OnlyModelAi</div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div class="hamburger">&#9776;</div>
-  </header>
+  <!-- Navigation -->
+  <nav>
+    <div class="hamburger">☰</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </nav>
 
-  <main>
-    <section class="pricing">
-      <div class="package">
+  <!-- Pricing Boxes -->
+  <section class="pricing-section section-hidden">
+    <h2>Choose Your Plan</h2>
+    <div class="pricing-container">
+      <!-- Starter Box -->
+      <div class="pricing-box btn-hover" onclick="window.location='https://payhip.com/OnlyModelAI'">
         <h3>Starter</h3>
-        <p>$49 One Time</p>
-        <p>Everything you need to begin</p>
+        <p class="price">€50</p>
+        <p class="type">One-Time</p>
+        <ul>
+          <li>14-Day Monetization Roadmap</li>
+          <li>Profile Optimization Guide</li>
+          <li>50+ Image Post Ideas</li>
+        </ul>
+        <p class="monthly-option">Or <strong>€20/mo</strong></p>
       </div>
-      <div class="package">
+
+      <!-- Deluxe Box -->
+      <div class="pricing-box btn-hover" onclick="window.location='https://payhip.com/OnlyModelAI'">
         <h3>Deluxe</h3>
-        <p>$150 One Time</p>
-        <p>Everything from Starter + more automation</p>
+        <p class="price">€147</p>
+        <p class="type">One-Time</p>
+        <ul>
+          <li>Full Prompt Vault</li>
+          <li>Caption Bank (105+ captions)</li>
+          <li>Sales Tactics</li>
+        </ul>
+        <p class="monthly-option">Or <strong>€49/mo</strong></p>
       </div>
-      <div class="package">
+
+      <!-- Mentorship Box -->
+      <div class="pricing-box btn-hover" onclick="window.location='https://payhip.com/OnlyModelAI'">
         <h3>Mentorship</h3>
-        <p>$380 One Time</p>
-        <p>1-on-1 Mentorship + all tools included</p>
+        <p class="price">€499</p>
+        <p class="type">One-Time</p>
+        <ul>
+          <li>1-on-1 DM Help</li>
+          <li>Content Review</li>
+          <li>Priority Support</li>
+        </ul>
+        <p class="monthly-option">Or <strong>€147/mo</strong></p>
       </div>
+    </div>
 
-      <div class="monthly">
-        <h3>Monthly</h3>
-        <p>$20/month</p>
-        <p>Access to updates and support</p>
-      </div>
-    </section>
-
-    <section class="deluxe-box">
-      <p>The Deluxe Package gives you all templates, automations, and training videos</p>
-    </section>
-
-    <section class="comparison-table">
+    <!-- Comparison Table -->
+    <div class="comparison-box section-hidden">
+      <h3>Feature Comparison</h3>
       <table>
-        <tr><th>Package</th><th>Features</th></tr>
-        <tr><td>Starter</td><td>Basic AI Model</td></tr>
-        <tr><td>Deluxe</td><td>Starter + Automation</td></tr>
-        <tr><td>Mentorship</td><td>All Access + 1-on-1</td></tr>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>€20/mo</th>
+            <th>€50 (Starter)</th>
+            <th>€147 (Deluxe)</th>
+            <th>€499 (Mentorship)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>14-Day Monetization Roadmap</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+            <td>✔</td>
+          </tr>
+          <!-- Add all other rows from your original table -->
+        </tbody>
       </table>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="contact-section">
-      <p>Contact: moecompany528@gmail.com | Instagram: @onlymodelai</p>
-    </section>
+  <!-- Discord CTA -->
+  <div class="discord-cta">
+    <a href="https://discord.gg/pgpqHX59bN" target="_blank" class="btn-hover">
+      <img src="assets/discord-icon.png" alt="Discord">
+      <span>Need Help? Join Discord</span>
+    </a>
+  </div>
 
-    <footer class="footer">
-      <a href="https://discord.gg/pgpqHX59bN" class="discord-link">Join our community for a free guide</a>
-    </footer>
-  </main>
+  <script src="js/script.js"></script>
 </body>
 </html>
