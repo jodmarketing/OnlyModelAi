@@ -1,0 +1,45 @@
+
+body {
+  background-color: #000;
+  color: gold;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #111;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links li a {
+  color: gold;
+  text-decoration: none;
+}
+.hero, .who-for, .features, .pricing, .faq, .deluxe-box, .comparison-table, .contact-section {
+  padding: 2rem;
+  text-align: center;
+}
+.boxes {
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  border: 1px solid gold;
+  padding: 1rem;
+  margin: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+.discord-link, .faq-link {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
