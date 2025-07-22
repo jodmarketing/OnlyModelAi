@@ -1,0 +1,28 @@
+/* Scroll Animations */
+.section-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s;
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover Effects */
+.btn-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Discord Pulse */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.discord-cta {
+  animation: pulse 2s infinite;
+}
